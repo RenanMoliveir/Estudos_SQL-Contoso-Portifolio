@@ -33,11 +33,16 @@ SELECT
 FROM DimProduct P
 -- Consulta retornou 16 CORES
 
+-- Selecionando marcas distintas
+SELECT
+	DISTINCT P.BrandName	
+FROM DimProduct P
+-- Consulta retornou 11 CORES
 
 
 /*VERIFICAR QUANTIDADE QUE CADA LOJA VENDEU*/
 
-SELECT TOP 10
+SELECT TOP 100
 	S.StoreKey,	
 	ST.StoreName,
 	SUM(S.SalesQuantity) AS Quantidade,
