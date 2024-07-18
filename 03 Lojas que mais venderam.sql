@@ -42,7 +42,7 @@ FROM DimProduct P
 
 /*VERIFICAR QUANTIDADE QUE CADA LOJA VENDEU*/
 
-SELECT TOP 100
+SELECT TOP 10
 	S.StoreKey,	
 	ST.StoreName,
 	SUM(S.SalesQuantity) AS Quantidade,
